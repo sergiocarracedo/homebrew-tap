@@ -5,21 +5,21 @@
 class SkillOrganizer < Formula
   desc "Organize structured skill trees into flat tool-readable targets"
   homepage "https://github.com/sergiocarracedo/skill-organizer"
-  version "1.0.2"
+  version "1.0.3"
   license "UNLICENSED"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sergiocarracedo/skill-organizer/releases/download/v1.0.2/skill-organizer_1.0.2_Darwin_x86_64.tar.gz"
-      sha256 "d9a8e618315a529d6cb0a2c9d88fd6f29fb7de71881aa29c5d85187bd5408491"
+      url "https://github.com/sergiocarracedo/skill-organizer/releases/download/v1.0.3/skill-organizer_1.0.3_Darwin_x86_64.tar.gz"
+      sha256 "85fd738e79d9511337689520c6e1e1bdf2e5c4289bb53f5a5f0a28e8bf4fb94b"
 
       define_method(:install) do
         bin.install "skill-organizer"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sergiocarracedo/skill-organizer/releases/download/v1.0.2/skill-organizer_1.0.2_Darwin_arm64.tar.gz"
-      sha256 "10fff8f4694d771c9866fb8f85f0bfaf4d640a8072328bd997b19e8b1c91a1bc"
+      url "https://github.com/sergiocarracedo/skill-organizer/releases/download/v1.0.3/skill-organizer_1.0.3_Darwin_arm64.tar.gz"
+      sha256 "4c052bef79415112b71913849cd596528412183088039e766af5e01596ba9c40"
 
       define_method(:install) do
         bin.install "skill-organizer"
@@ -29,22 +29,22 @@ class SkillOrganizer < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sergiocarracedo/skill-organizer/releases/download/v1.0.2/skill-organizer_1.0.2_Linux_x86_64.tar.gz"
-      sha256 "ce0afc66ad9b21d1bb9ccdbcf782c508714000361ebdfcaa70706d2bfa651b0f"
+      url "https://github.com/sergiocarracedo/skill-organizer/releases/download/v1.0.3/skill-organizer_1.0.3_Linux_x86_64.tar.gz"
+      sha256 "e3467b8df392a3b14fa35b1ff50f210208d169ca470ccead01ff936879287439"
       define_method(:install) do
         bin.install "skill-organizer"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "https://github.com/sergiocarracedo/skill-organizer/releases/download/v1.0.2/skill-organizer_1.0.2_Linux_arm.tar.gz"
-      sha256 "9e5aa471214a31b63a37f0317d2884746dfa207e5e2d5ba8fa90a23fa1e4c023"
+      url "https://github.com/sergiocarracedo/skill-organizer/releases/download/v1.0.3/skill-organizer_1.0.3_Linux_arm.tar.gz"
+      sha256 "42d62c8725033d57e31760c6f2a17a54730b0d5f118607d546ff9a6011c5c60b"
       define_method(:install) do
         bin.install "skill-organizer"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sergiocarracedo/skill-organizer/releases/download/v1.0.2/skill-organizer_1.0.2_Linux_arm64.tar.gz"
-      sha256 "95342afd264bcddb055769c43085cae48517d0347ec09513ba080de045ca0c95"
+      url "https://github.com/sergiocarracedo/skill-organizer/releases/download/v1.0.3/skill-organizer_1.0.3_Linux_arm64.tar.gz"
+      sha256 "e9f2e40d4e5c590d265bbc28de5f4d2781ad7084521902e7c4d1b5248009501e"
       define_method(:install) do
         bin.install "skill-organizer"
       end
