@@ -5,21 +5,21 @@
 class OnAMeet < Formula
   desc "CLI tool to detect camera on/off state and trigger commands"
   homepage "https://github.com/sergiocarracedo/on-a-meet"
-  version "1.1.0"
+  version "1.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sergiocarracedo/on-a-meet/releases/download/v1.1.0/on-a-meet_1.1.0_darwin_amd64.tar.gz"
-      sha256 "0ac77248c307ea4ef70c9434c0993dc076001e9ce35b6ed5ed4ac429b42128df"
+      url "https://github.com/sergiocarracedo/on-a-meet/releases/download/v1.2.0/on-a-meet_1.2.0_darwin_amd64.tar.gz"
+      sha256 "5cf4294cda7e6ee98a1a6eae234fd93a766309abbf367c0ab4b17020fd08e0f4"
 
       define_method(:install) do
         bin.install "on-a-meet"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sergiocarracedo/on-a-meet/releases/download/v1.1.0/on-a-meet_1.1.0_darwin_arm64.tar.gz"
-      sha256 "242b2f6cff67705e95e53d57ce8a760d2aceb0d47d5a71021347079926c2483d"
+      url "https://github.com/sergiocarracedo/on-a-meet/releases/download/v1.2.0/on-a-meet_1.2.0_darwin_arm64.tar.gz"
+      sha256 "bb8bb6f89d75dccec71613193fe312f0ba56ba101784956af1b738f8083803ed"
 
       define_method(:install) do
         bin.install "on-a-meet"
@@ -29,15 +29,15 @@ class OnAMeet < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sergiocarracedo/on-a-meet/releases/download/v1.1.0/on-a-meet_1.1.0_linux_amd64.tar.gz"
-      sha256 "ca854c6f4c4aa10668cfd69899b3c8e33abf852c7635d822025fa9084e364727"
+      url "https://github.com/sergiocarracedo/on-a-meet/releases/download/v1.2.0/on-a-meet_1.2.0_linux_amd64.tar.gz"
+      sha256 "630cd47a1cd400afbbf116631755fe35e60cbe749cce69a82f77b410a14543bd"
       define_method(:install) do
         bin.install "on-a-meet"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sergiocarracedo/on-a-meet/releases/download/v1.1.0/on-a-meet_1.1.0_linux_arm64.tar.gz"
-      sha256 "93b592d9273bb9a1248b08d9aecb95d5432d98dae8537526a444f9a3da4ecf94"
+      url "https://github.com/sergiocarracedo/on-a-meet/releases/download/v1.2.0/on-a-meet_1.2.0_linux_arm64.tar.gz"
+      sha256 "4b99443597e4dd74b86d69d8aa6f1ef6601ca695fce7cef1a2665849600b1005"
       define_method(:install) do
         bin.install "on-a-meet"
       end
