@@ -11,7 +11,7 @@ class SkillOrganizer < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/sergiocarracedo/skill-organizer/releases/download/v1.1.0/skill-organizer_1.1.0_Darwin_x86_64.tar.gz"
-      sha256 "e34ec600b493b4defd260d999f7e54d316c3540325e20ff02e5b5024a151ab4a"
+      sha256 "22ed3db3188bc16d8d9be2fd128aa5fe41eedb898c0e3b3d6e514e911757219c"
 
       define_method(:install) do
         bin.install "skill-organizer"
@@ -19,7 +19,7 @@ class SkillOrganizer < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/sergiocarracedo/skill-organizer/releases/download/v1.1.0/skill-organizer_1.1.0_Darwin_arm64.tar.gz"
-      sha256 "8d6793526433f8d1509991dc5a7bc87edec28a19ec74e4f8ce4fd08c1e0cc645"
+      sha256 "d2fdc217272d1e81d6fc259a54ae749cc7cf9b4242c5792faab4f945c3827f4f"
 
       define_method(:install) do
         bin.install "skill-organizer"
@@ -30,21 +30,21 @@ class SkillOrganizer < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/sergiocarracedo/skill-organizer/releases/download/v1.1.0/skill-organizer_1.1.0_Linux_x86_64.tar.gz"
-      sha256 "816a4e1a3259624b5dd24b76e8f2b995e8c0924491526cf11e1ad4c606163011"
+      sha256 "11bb94a108136bde6211e19759fcaeb70d0afb50b226421a138a7765faae91ed"
       define_method(:install) do
         bin.install "skill-organizer"
       end
     end
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
       url "https://github.com/sergiocarracedo/skill-organizer/releases/download/v1.1.0/skill-organizer_1.1.0_Linux_arm.tar.gz"
-      sha256 "29b7b043dce09d33033d3b7831eb5f086c3d9f040f586cf50ab59ca137071c4f"
+      sha256 "71ca61f350d9d4141b5aa9f4d069f57112b0d0d9c2f5bcc234ba75852a31acda"
       define_method(:install) do
         bin.install "skill-organizer"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/sergiocarracedo/skill-organizer/releases/download/v1.1.0/skill-organizer_1.1.0_Linux_arm64.tar.gz"
-      sha256 "e33ab1d6b561ff658fe1da1893a0d8313eb8e704b4f86e8c433bb22045ad3817"
+      sha256 "9e58dcca0d98f7db4b0cf1affea8818cf692e099e4c5029e6fb9034b695fa759"
       define_method(:install) do
         bin.install "skill-organizer"
       end
