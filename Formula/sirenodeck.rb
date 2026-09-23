@@ -5,11 +5,11 @@ class Sirenodeck < Formula
   sha256 "b5be3818ceaaea7cb4194afc8d3b71a3954d47d32550f779315380299f4583af"
   license "MIT"
 
-  depends_on "node"
+  depends_on "node@22"
 
   def install
     libexec.install Dir["*"]
-    system "npm", "install", "--prefix", libexec, "--omit=dev", "--legacy-peer-deps", "--ignore-scripts=false"
+    system Formula["node@22"].opt_bin/"npm", "install", "--prefix", libexec, "--omit=dev", "--legacy-peer-deps", "--ignore-scripts=false"
     bin.install_symlink libexec/"bin/sirenodeck.js"
   end
 
