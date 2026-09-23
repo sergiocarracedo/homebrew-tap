@@ -10,7 +10,7 @@ class Sirenodeck < Formula
   def install
     libexec.install Dir["*"]
     system Formula["node@22"].opt_bin/"npm", "install", "--prefix", libexec, "--omit=dev", "--legacy-peer-deps", "--ignore-scripts"
-    bin.install_symlink libexec/"bin/sirenodeck.js"
+    bin.install_symlink libexec/"bin/sirenodeck.js" => "sirenodeck"
   end
 
   test do
