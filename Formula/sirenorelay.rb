@@ -5,22 +5,22 @@
 class Sirenorelay < Formula
   desc "Policy-filtered MCP email relay for agents"
   homepage "https://github.com/sergiocarracedo/sireno-relay"
-  version "1.5.0"
+  version "1.5.1"
 
   depends_on "himalaya"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/sergiocarracedo/sireno-relay/releases/download/v1.5.0/sirenorelay_1.5.0_darwin_amd64.tar.gz"
-      sha256 "adeecec7a87ac92af30c651a54d781575e7baa140da68eee8fb8bf17cffe2ec4"
+      url "https://github.com/sergiocarracedo/sireno-relay/releases/download/v1.5.1/sirenorelay_1.5.1_darwin_amd64.tar.gz"
+      sha256 "502f15a7843d276c6a4f2a499e2cac32a430050a993c7d667ed9fbe61884e7eb"
 
       define_method(:install) do
         bin.install "sirenorelay"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/sergiocarracedo/sireno-relay/releases/download/v1.5.0/sirenorelay_1.5.0_darwin_arm64.tar.gz"
-      sha256 "9066aa918650b489f811e8c91e3e899608a59c81193822ff0e3bde818bc6a079"
+      url "https://github.com/sergiocarracedo/sireno-relay/releases/download/v1.5.1/sirenorelay_1.5.1_darwin_arm64.tar.gz"
+      sha256 "8032ab11ff5bf920a81eaf93b2d61a813e56ea609a7b1cfd0cc253212e202f6a"
 
       define_method(:install) do
         bin.install "sirenorelay"
@@ -30,15 +30,15 @@ class Sirenorelay < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sergiocarracedo/sireno-relay/releases/download/v1.5.0/sirenorelay_1.5.0_linux_amd64.tar.gz"
-      sha256 "cbfddd9a51db329104524156d3f93dcdff585ec6774898850524c6d6814249e6"
+      url "https://github.com/sergiocarracedo/sireno-relay/releases/download/v1.5.1/sirenorelay_1.5.1_linux_amd64.tar.gz"
+      sha256 "4868ce754bce3ba0e625bfdbce2df4eaab56133b6e15304b952a711cd8f95d27"
       define_method(:install) do
         bin.install "sirenorelay"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/sergiocarracedo/sireno-relay/releases/download/v1.5.0/sirenorelay_1.5.0_linux_arm64.tar.gz"
-      sha256 "f462bdd8c9c0d8eef27c93ca8c38533fb9ae0a50f77a2585c6f7ea08ff2e3a03"
+      url "https://github.com/sergiocarracedo/sireno-relay/releases/download/v1.5.1/sirenorelay_1.5.1_linux_arm64.tar.gz"
+      sha256 "f397e4a6011ec3abc94b4a52580d0404e8b6fe15fd77384ec9cd8b21942c124b"
       define_method(:install) do
         bin.install "sirenorelay"
       end
