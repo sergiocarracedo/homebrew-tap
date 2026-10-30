@@ -11,7 +11,7 @@ class Sirenodeck < Formula
     libexec.install Dir["*"]
     # get-windows has a Windows-only native install script; runtime packages ship prebuilt assets.
     system "npm", "install", "--prefix", libexec, "--omit=dev", "--legacy-peer-deps", "--ignore-scripts"
-    bin.install_symlink libexec/"bin/sirenodeck"
+    bin.install_symlink libexec/"bin/sirenodeck.js" => "sirenodeck"
   end
 
   test do
