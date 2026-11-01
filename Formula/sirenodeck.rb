@@ -1,8 +1,8 @@
 class Sirenodeck < Formula
   desc "Config-driven Stream Deck controller"
   homepage "https://github.com/sergiocarracedo/sireno-deck"
-  url "https://registry.npmjs.org/@sirenodeck/sirenodeck/-/sirenodeck-0.2.5.tgz"
-  sha256 "9931a471d9ed820418f6babfcf00b5ddc43cd0d00df3b819f2f63cc438d99a4c"
+  url "https://github.com/sergiocarracedo/sireno-deck/releases/download/%40sirenodeck%2Fsirenodeck-0.2.6/sirenodeck-sirenodeck-0.2.6.tgz"
+  sha256 "8237ffb79142c02ab12b788909b796eb70fc339f675751697ed6fb44e4640490"
   license "MIT"
 
   depends_on "node"
