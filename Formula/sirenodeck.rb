@@ -1,7 +1,7 @@
 class Sirenodeck < Formula
   desc "Config-driven Stream Deck controller"
   homepage "https://github.com/sergiocarracedo/sireno-deck"
-  url "https://github.com/sergiocarracedo/sireno-deck/releases/download/%40sirenodeck%2Fsirenodeck-0.2.6/sirenodeck-sirenodeck-0.2.6.tgz"
+  url "https://github.com/sergiocarracedo/sireno-deck/releases/download/%40sirenodeck%2Fsirenodeck-0.2.6-homebrew/sirenodeck-sirenodeck-0.2.6.tgz"
   sha256 "8237ffb79142c02ab12b788909b796eb70fc339f675751697ed6fb44e4640490"
   license "MIT"
 
